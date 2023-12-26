@@ -24,7 +24,7 @@ console.log(id === anotherId);
 
 const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
-    name: "hitesh",
+    name: "bitu",
     age: 22,
 }
 
@@ -35,3 +35,28 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-primitive)
+
+let myName = "Iswar ch Rana";
+let myName2 = myName ;
+myName2 = "bitu";
+
+// This will give two different values as in this case the memory alocation is in stack and if we assign any value then it makes the copy of it
+
+console.log(myName);
+console.log(myName2);
+
+
+let userOne = {
+    name : "Hitesh" ,
+    email : "bitu@gmail.com"
+};
+
+let userTwo = userOne ;
+
+userTwo.name = "Bitu" ;
+console.log(userOne.name); // Output Bitu
+console.log(userTwo.name); // Output Bitu
