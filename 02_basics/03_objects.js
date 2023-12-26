@@ -30,4 +30,4 @@ person.greeting = function () {
     console.log(`Hello ${this.name}`);
 }
 
-console.log(person.greeting()); 
+console.log(person.greeting());
